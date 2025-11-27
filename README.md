@@ -66,11 +66,15 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 ### 4. Set Up Supabase Database
 
-1. Create a new Supabase project at [supabase.com](https://supabase.com)
-2. Go to SQL Editor in your Supabase dashboard
-3. Copy the contents of `FRESH_DATABASE_SCHEMA.sql`
-4. Paste and run it in the SQL Editor
-5. Copy your project URL and anon key from Settings → API
+1. Go to your Supabase project at: **https://pnfxxaryrtpxtmoeujqo.supabase.co**
+2. Click **"SQL Editor"** in the left sidebar
+3. Click **"New Query"**
+4. Copy the contents of `FRESH_DATABASE_SCHEMA.sql`
+5. Paste and click **"Run"**
+6. Wait for **"Success"** message
+7. Your database is ready! ✅
+
+**Note:** The schema has been updated to match the frontend code perfectly.
 
 ### 5. Run Development Server
 
