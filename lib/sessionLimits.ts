@@ -68,7 +68,6 @@ export async function canJoinSession(
                 can_join: false,
                 reason: `Maximum ${PARTICIPATION_LIMITS.MAX_QUERIES} queries at a time. Leave one first.`,
                 current_queries: currentQueries,
-                can_join: false,
             };
         }
 

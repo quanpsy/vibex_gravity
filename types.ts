@@ -116,26 +116,26 @@ export interface Session {
   emoji: string;
   lat: number;
   lng: number;
-  
+
   // Timing
   event_time: string;
   duration: number;
   status: SessionStatus;
-  
+
   // Privacy & Filters
   privacy: Privacy;
   visible_to_tags?: string[];
   gender_filter?: GenderFilter;
-  
+
   // Type-specific fields
   flow?: SessionFlow;
   help_category?: HelpCategory;
   skill_tag?: string;
   return_time?: string;
-  
+
   // Ownership
   current_owner_id?: string;
-  
+
   // Joined data
   creator?: {
     id: string;
@@ -144,7 +144,7 @@ export interface Session {
   };
   participants?: SessionParticipant[];
   participant_count?: number;
-  
+
   created_at: string;
   updated_at: string;
 }
@@ -627,4 +627,18 @@ export const DM_MESSAGE_BLOCKS: MessageBlock[] = [
   { id: 'sure', text: 'Sure', category: 'dm' },
   { id: 'sounds_good', text: 'Sounds good', category: 'dm' },
   { id: 'maybe_later', text: 'Maybe later', category: 'dm' },
+];
+
+/**
+ * Premade message blocks for quick replies (Legacy support)
+ */
+export const PREMADE_MESSAGE_BLOCKS = [
+  "👋 Hi there!",
+  "📍 Where are you?",
+  "⏰ On my way!",
+  "👍 Sounds good",
+  "🎉 Can't wait!",
+  "🤔 Not sure yet",
+  "🛑 Running late",
+  "✅ I'm here"
 ];
